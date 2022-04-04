@@ -34,7 +34,7 @@ namespace JobLessonOOP03v01Part01
                 }
                 if (_sumWithdrawFormBankAccount <= _ballanceBankAccount)
                 {
-                    _ballanceBankAccount = _ballanceBankAccount - _sumWithdrawFormBankAccount;
+                    _ballanceBankAccount -= _sumWithdrawFormBankAccount;
                     PrintWithdrowSucsess();
                 }
             }
@@ -43,9 +43,13 @@ namespace JobLessonOOP03v01Part01
         {
             if (NumberBankAccount == _numberBankAccount)
             {
-                _ballanceBankAccount = _ballanceBankAccount + _sumPutOnBankAccount;
+                _ballanceBankAccount += _sumPutOnBankAccount;
                 PrintPutOn();
             }
+        }
+        public void TranferSumm ()
+        {   
+
         }
 
         public BankAccount() : this(100, TypeBankAccount.Current) { }

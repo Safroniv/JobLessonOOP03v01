@@ -7,8 +7,10 @@ namespace JobLessonOOP03v01Part01
 
         static void Main()
         {
+
             BankAccount mybankAccount0 = new BankAccount();
             mybankAccount0.Print();
+            
             BankAccount mybankAccount1 = new BankAccount(50000.99m);
             mybankAccount1.Print();
             BankAccount mybankAccount2 = new BankAccount(TypeBankAccount.Debet);
