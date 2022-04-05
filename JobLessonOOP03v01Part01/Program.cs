@@ -9,19 +9,16 @@ namespace JobLessonOOP03v01Part01
         {
 
             BankAccount mybankAccount0 = new BankAccount();
-            mybankAccount0.Print();
-            
+            //mybankAccount0.Print();
             BankAccount mybankAccount1 = new BankAccount(50000.99m);
-            mybankAccount1.Print();
+            //mybankAccount1.Print();
             BankAccount mybankAccount2 = new BankAccount(TypeBankAccount.Debet);
-            mybankAccount2.Print();
+            //mybankAccount2.Print();
             BankAccount mybankAccount3 = new BankAccount(999_999.99m, TypeBankAccount.Credit);
-            mybankAccount3.Print();
+            //mybankAccount3.Print();
 
-            mybankAccount1.WithdrawFormBankAccount();
-            mybankAccount1.Print();
-            mybankAccount1.PutOnBankAccount();
-            mybankAccount1.Print();
+            mybankAccount1.Transfer(mybankAccount1, mybankAccount2, 500);
+
 
             Console.ReadLine();
         }
