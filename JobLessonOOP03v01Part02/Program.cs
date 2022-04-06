@@ -4,7 +4,7 @@ namespace JobLessonOOP03v01Part02
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine(Reverse("АбВгДеЖз"));
             Console.WriteLine(Reverse("String To Reverse TEST 002"));

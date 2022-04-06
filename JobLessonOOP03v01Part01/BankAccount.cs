@@ -4,9 +4,9 @@ namespace JobLessonOOP03v01Part01
 {
     class BankAccount
     {
-        private int _numberBankAccount;
+        private readonly int _numberBankAccount;
         private decimal _ballanceBankAccount;
-        private TypeBankAccount _typeBankAccount;
+        private readonly TypeBankAccount _typeBankAccount;
         private decimal _sumWithdrawFormBankAccount;
         private decimal _sumPutOnBankAccount;
         private static int _generateNumberBankAccount = 0000_0000_1000_0000;
