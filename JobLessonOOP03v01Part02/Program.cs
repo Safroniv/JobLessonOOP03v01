@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace JobLessonOOP03v01Part02
 {
@@ -10,19 +6,27 @@ namespace JobLessonOOP03v01Part02
     {
         static void Main(string[] args)
         {
-            string string001 = "АбВгДеЖз";
-            Console.WriteLine(Reverse(string001));
-            string string002 = "String To Reverse TEST 002";
-            Console.WriteLine(Reverse(string002));
-            string string003 = Convert.ToString(Console.ReadLine());
-            Console.WriteLine(Reverse(string003));
-            Console.ReadLine();
+            Console.WriteLine(Reverse("АбВгДеЖз"));
+            Console.WriteLine(Reverse("String To Reverse TEST 002"));
+            while (Console.ReadLine() != "qwit")
+            {
+                Console.WriteLine(Reverse(Convert.ToString(Console.ReadLine())));
+            }
         }
-        static string Reverse (string string1)
+        static string Reverse(string string1)
         {
+
             char[] arrayChars = string1.ToCharArray();
-            Array.Reverse(arrayChars);
-            return new string(arrayChars);
+            string reverse = "";
+            for (int i = arrayChars.Length; i > 0; i--)
+            {
+
+                reverse += arrayChars[i - 1];
+            }
+            //Можно было и так сделать:
+            //char[] arrayChars = string1.ToCharArray();
+            //Array.Reverse(arrayChars);
+            return reverse;
         }
     }
 }
