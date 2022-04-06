@@ -57,9 +57,9 @@ namespace JobLessonOOP03v01Part01
             
         }
 
-        public void Transfer (BankAccount bankAccountFrom, BankAccount bankAccountTo, decimal summTransfer)
+        public void Transfer (BankAccount bankAccountTo, decimal summTransfer)
         {
-            bankAccountFrom.WithdrawFormBankAccount(summTransfer);
+            WithdrawFormBankAccount(summTransfer);
             _sumWithdrawFormBankAccount = summTransfer;
             if (_sumWithdrawFormBankAccount > _ballanceBankAccount)
             {
